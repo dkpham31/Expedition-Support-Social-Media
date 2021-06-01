@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="7dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+
+
+        >
+        <ImageView
+            android:id="@+id/expedition_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/live_expedition"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="#ffffff"
+           android:alpha="0.6"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:id="@+id/expedition_name"
+            android:layout_marginStart="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breaking the Cycle in Africa"
+            android:layout_above="@id/linearlayout1"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_marginBottom="14dp"
+            android:alpha="1"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/destination_icon"
+            android:layout_alignParentBottom="true"
+            />
+            <TextView
+                android:id="@+id/expedition_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:text="2000 km"
+                android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+
+            android:background="@drawable/schedule"
+            android:layout_alignParentBottom="true"/>
+            <TextView
+                android:id="@+id/expedition_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:text="299 days"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

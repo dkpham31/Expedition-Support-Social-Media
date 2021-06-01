@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group>
+        <item android:id="@+id/homePage"
+            android:title="Home"
+            android:icon="@drawable/homepage"/>
+        <item android:id="@+id/Blogs"
+            android:title="Blogs"
+            android:icon="@drawable/blogs"/>
+        <item android:id="@+id/Gallery"
+            android:title="Gallery"
+            android:icon="@drawable/gallery"/>
+        <item android:id="@+id/Setting"
+            android:title="Setting"
+            android:icon="@drawable/setting"/>
+
+    </group>
+
+</menu>

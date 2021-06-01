@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#Bbdefb">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Password Recover"
+                android:textColor="#615D5D"
+                android:textSize="23sp"
+                android:drawableLeft="@drawable/ic_baseline_settings_backup_restore_24"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp">
+            </TextView>
+        </LinearLayout>
+
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/forget_pass_info"
+            android:hint=" Enter Your Email"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_account_box_24"
+            android:drawablePadding="1dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar_forget"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:max="100"
+            android:visibility="invisible"
+            android:layout_below="@+id/framelauout"
+            android:indeterminateTint="#1a09d6"
+            android:layout_marginTop="-7dp"/>
+    </LinearLayout>
+</ScrollView>

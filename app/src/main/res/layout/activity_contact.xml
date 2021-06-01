@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".loginandsignup.MainActivity">
+
+
+    <EditText
+        android:id="@+id/namedata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/emaildata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="250dp"
+        android:ems="10"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/messagedata"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="4000dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Message" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="100dp"
+        android:text="Contact us"
+        android:textSize="50dp"
+        />
+
+    <Button
+        android:id="@+id/btsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="500dp"
+        android:background="#ECD50000"
+        android:text="Send"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00B8D4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="640dp"
+        android:text="Link with us: "
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/FacebookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="635dp"
+        android:layout_marginLeft="170dp"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/InstagramButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="635dp"
+        android:layout_marginLeft="240dp"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/instagram" />
+
+    <ImageButton
+        android:id="@+id/TwitterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="635dp"
+        android:layout_marginLeft="310dp"
+        android:background="#FFFFFF"
+        app:srcCompat="@drawable/twitter" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbarColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+</RelativeLayout>

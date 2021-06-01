@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Fragment_homepage">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearlayout1"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/logo"
+           />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expedition"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:textColor="#000000"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+         />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/Search_function"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linearlayout1"
+        android:background="@drawable/custom_searchbar"
+        android:drawableEnd="@drawable/search_icon"
+        android:paddingEnd="5dp"
+        android:hint="Search"
+        android:paddingStart="15dp"/>
+    <TextView
+        android:id="@+id/News"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News"
+        android:layout_below="@+id/Search_function"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:textSize="20dp"
+        android:textColor="#f57c00"
+        />
+    <RelativeLayout
+        android:id="@+id/RelativLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/News"
+
+        >
+        <ImageView
+            android:id="@+id/live_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/live_expedition"
+
+          />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Journey in Africa"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/watch"
+            android:layout_marginStart="10dp"
+            android:textSize="19dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/watch"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/watch"
+            android:layout_margin="3dp"
+            />
+
+            <TextView
+                android:id="@+id/start_date"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="20/03/2020"
+                android:layout_toEndOf="@+id/watch"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_alignParentBottom="true"
+                />
+        <ImageView
+            android:id="@+id/flags_destination"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/start_date"
+            android:background="@drawable/flags_destination"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/destination_name"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Senegal"
+            android:layout_toEndOf="@+id/flags_destination"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/previous_expedition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expedition"
+        android:layout_below="@+id/RelativLayout1"
+        android:textColor="#f57c00"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/expedition_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/previous_expedition"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+
+        android:foregroundGravity="center"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Fragment_Setting">
+
+
+    <Button
+        android:id="@+id/DonationButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AboutKateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/donation"
+        android:drawablePadding="6dp"
+        android:paddingLeft="20dp"
+        android:text="Donation" />
+
+    <Button
+        android:id="@+id/NotificationButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DonationButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/notification"
+        android:drawablePadding="27dp"
+        android:paddingLeft="20dp"
+        android:text="Notification" />
+
+    <Button
+        android:id="@+id/ContactUsButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NotificationButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/contact"
+        android:drawablePadding="20dp"
+        android:paddingLeft="20dp"
+        android:text="Contact Us" />
+
+    <Button
+        android:id="@+id/SignOutButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ContactUsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/signout"
+        android:drawablePadding="0dp"
+        android:paddingLeft="20dp"
+        android:text="Sign Out" />
+
+    <Button
+        android:id="@+id/AboutKateButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccountButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/aboutkate"
+        android:drawablePadding="22dp"
+        android:paddingLeft="20dp"
+        android:text="About Kate" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="155dp"
+        android:src="@drawable/settingbackground" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="381dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:text="Expedition"
+        android:textColor="#f57c00"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/AccountButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="6dp"
+        android:paddingLeft="20dp"
+        android:text="Account" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/SignOutButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Education Partners:"
+        android:textColor="#f57c00"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/Partner1"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/SignOutButton"
+        android:layout_toRightOf="@+id/textView25"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/partner1" />
+
+    <ImageView
+        android:id="@+id/Partner2"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/SignOutButton"
+        android:layout_toRightOf="@+id/Partner1"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/partner2" />
+
+    <ImageView
+        android:id="@+id/Partner3"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/SignOutButton"
+        android:layout_toRightOf="@+id/Partner2"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/partner3" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView25"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="Link with us:"
+        android:textColor="#f57c00"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/FacebookButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/textView25"
+        android:layout_toRightOf="@+id/textView26"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/com_facebook_favicon_blue" />
+
+    <ImageView
+        android:id="@+id/InstagramButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/textView25"
+        android:layout_toRightOf="@+id/FacebookButton"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/instagram" />
+
+    <ImageView
+        android:id="@+id/TwitterButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/textView25"
+        android:layout_toRightOf="@+id/InstagramButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/twitter" />
+
+
+</RelativeLayout>

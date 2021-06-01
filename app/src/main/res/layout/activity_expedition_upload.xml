@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app_manage.expedition_upload">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_upload">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Expedition"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:textColor="#f57c00"
+                />
+            <TextView
+                android:id="@+id/expedition_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:textColor="#ffffff"
+                android:background="#E05656"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:textSize="21sp"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_upload"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <EditText
+            android:id="@+id/expedition_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Title"/>
+
+        <EditText
+            android:id="@+id/expedition_first_intro"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="First Introduction" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:id="@+id/expedition_long"
+                android:hint="How long"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+            <EditText
+                android:id="@+id/expedition_distance"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Distance (km)"/>
+            <EditText
+                android:id="@+id/expedition_trailer"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Trailer title"/>
+            <EditText
+                android:id="@+id/expedition_youtubevideo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Link from Youtube video"/>
+            <EditText
+                android:id="@+id/expedition_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Content"
+                android:gravity="start"
+                />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/add_team_member"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:text="Add team Member"
+                android:textAllCaps="false" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/team_member_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_team_member"
+                />
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/get_image"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Add image"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/image_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/cover_image_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Image Cover"
+                    android:textAllCaps="false"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/image_cover"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
