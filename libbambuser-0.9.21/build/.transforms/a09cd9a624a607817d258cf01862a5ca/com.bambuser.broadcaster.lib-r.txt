@@ -1,0 +1,5 @@
+com.bambuser.broadcaster.lib
+attr cropToParent
+attr denominator
+attr numerator
+styleable SurfaceViewWithAutoAR cropToParent denominator numerator
